@@ -7,7 +7,7 @@
     /* TODO: How would you like to fetch your repos? Someone say AJAX!?
        Don't forget to call the callback! */
     $.ajax({
-      url: 'https://api.github.com/users/' + vienRepoToken.gitUser + '/repos' + '?per_page=10' + '&sort=updated',
+      url: 'https://api.github.com/users/' + vienRepoToken.gitUser + '/repos' + '?per_page=10' + '&sort=updated' + '&since=2016-05-09T00:00:01Z',
       type: 'GET',
       headers: {'Authorization':'token ' + vienRepoToken.token},
       success: function(data, message, xhr) {
